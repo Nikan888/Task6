@@ -13,7 +13,10 @@ namespace Task6
             List<Employee> list = new List<Employee>
             {
                 new Employee("Yury", "Bolbukou", 18, "Oktyabrya, 48a", "BI", "trainee", "+375293595413", 25),
-                new Employee("Stanislav", "Ivanov", 20, "Gagarina, 20", "BI", "junior", "+375441158736", 154)
+                new Employee("Stanislav", "Ivanov", 25, "Gagarina, 20", "BI", "junior", "+375441158736", 154),
+                new Employee("QWERTYUI", "YCFVGYBKHN", 22, "RDCTFVGBHN", "CTVGYBHUN", "OIJL", "684526454", 98),
+                new Employee("fdghjkjh", "dfghjjkh", 20, "efdghkj", "drtyuk", "iokjhg", "123456789", 74),
+                new Employee("Ivan", "Apekunov", 18, "Chekalova, 22", "BI", "trainee", "+375291748933", 120)
             };
             try
             {
