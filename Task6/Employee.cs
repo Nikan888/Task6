@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task6
 {
-    public class Employee : IComparable
+    public class Employee : IComparable<Employee>
     {
         string firstName;
         string lastName;
@@ -70,19 +70,9 @@ namespace Task6
         }
 
         //method for comparing class execs by the value of a salary
-        public int CompareTo(object obj)
+        public int CompareTo(Employee obj)
         {
-            if (!(obj is Employee))
-            {
-                throw new Exception("Object isn't Employee");
-            }
-            Employee employee = (Employee)obj;
-            if (this > employee)
-                return 1;
-            else if (this < employee)
-                return -1;
-            else
-                return 0;
+            return (Salary.CompareTo(obj.Salary));
         }
 
         public static bool operator >(Employee e1, Employee e2)
